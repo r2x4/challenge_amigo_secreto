@@ -88,24 +88,18 @@ body {
 }
 
 .button-container {
-    width: 300px;
-    justify-content: center;
-}
-
-/* Estilos de entrada de texto */
-.input-title {
-    flex: 1;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-right: none;
-    border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 600px; 
+    margin-top: 20px;
 }
 
 /* Estilos de botón */
 button {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -113,6 +107,29 @@ button {
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    flex-grow: 1; 
+}
+
+.button-draw img, .button-add img {
+    margin-right: 10px; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    width: 100%;
+    max-width: 600px; 
+    margin-top: 20px;
+}
+
+.button-draw {
+    background-color: var(--color-button);
+    color: var(--color-white);
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
 }
 
 .button-add {
@@ -140,23 +157,4 @@ ul {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
-}
-
-/* Botón de sortear título */
-.button-draw {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
-    font-size: 16px;
-}
-
-.button-draw img {
-    margin-right: 40px;
-}
-
-.button-draw:hover {
-    background-color: var(--color-button-hover);
 }
