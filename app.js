@@ -16,7 +16,7 @@ window.onload = function () {
 // Función para agregar amigos a la lista
 function agregarAmigo() {
     const input = document.getElementById('amigo');
-    const nombreCompleto = input.value.trim().toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase()); // Capitaliza correctamente
+    const nombreCompleto = input.value.trim().toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase()); 
 
     if (nombreCompleto && !amigos.includes(nombreCompleto)) {
         amigos.push(nombreCompleto);
